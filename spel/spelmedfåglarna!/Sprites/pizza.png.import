@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btnhrgl8khucf"
-path="res://.godot/imported/charecter walk_1.png-75648beb8ab230a58ab4c21403186b8c.ctex"
+uid="uid://cqnqwu2d1usbk"
+path="res://.godot/imported/pizza.png-18b23b938a502c5ae315eaadf4e056cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charecter walk_1.png"
-dest_files=["res://.godot/imported/charecter walk_1.png-75648beb8ab230a58ab4c21403186b8c.ctex"]
+source_file="res://Sprites/pizza.png"
+dest_files=["res://.godot/imported/pizza.png-18b23b938a502c5ae315eaadf4e056cc.ctex"]
 
 [params]
 

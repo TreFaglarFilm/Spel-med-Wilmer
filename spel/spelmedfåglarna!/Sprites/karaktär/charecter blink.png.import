@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da7iwvcoej7vt"
-path="res://.godot/imported/charecter blink.png-b14187480618ea1d0beb5c3093ac0cec.ctex"
+path="res://.godot/imported/charecter blink.png-f7bae4de721cf050f0727c39ab7c6da2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charecter blink.png"
-dest_files=["res://.godot/imported/charecter blink.png-b14187480618ea1d0beb5c3093ac0cec.ctex"]
+source_file="res://Sprites/karaktär/charecter blink.png"
+dest_files=["res://.godot/imported/charecter blink.png-f7bae4de721cf050f0727c39ab7c6da2.ctex"]
 
 [params]
 

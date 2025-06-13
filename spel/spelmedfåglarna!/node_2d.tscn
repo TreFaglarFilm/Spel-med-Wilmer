@@ -113,7 +113,7 @@ position = Vector2(65.6602, 66.6914)
 scale = Vector2(5.002, 5)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
 animation = &"Walking"
-frame_progress = 0.373889
+frame_progress = 0.955733
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

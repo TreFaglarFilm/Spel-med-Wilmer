@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bw38lsxfautvt"]
+[gd_scene load_steps=12 format=3 uid="uid://bw38lsxfautvt"]
 
 [ext_resource type="Script" uid="uid://bt72j3rqspp28" path="res://Kod/character move,emt.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://ygjqsxq17tof" path="res://Sprites/karaktär/charecter.png" id="2_epypp"]
 [ext_resource type="Texture2D" uid="uid://btnhrgl8khucf" path="res://Sprites/karaktär/charecter walk_1.png" id="3_kdubu"]
 [ext_resource type="Texture2D" uid="uid://cmdcyx86jiv6t" path="res://Sprites/karaktär/charecter walk_2.png" id="4_d21ai"]
 [ext_resource type="Texture2D" uid="uid://da7iwvcoej7vt" path="res://Sprites/karaktär/charecter blink.png" id="5_rj586"]
+[ext_resource type="AudioStream" uid="uid://bo7aw8iigbbft" path="res://ljud/charecter/jump_6.wav" id="6_d21ai"]
 [ext_resource type="Texture2D" uid="uid://drwmlx57rmmn2" path="res://Sprites/grass_block.png" id="6_kdubu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
@@ -119,6 +120,9 @@ position = Vector2(65.6602, 66.6914)
 scale = Vector2(5.002, 5)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
 animation = &"idle"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
+stream = ExtResource("6_d21ai")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

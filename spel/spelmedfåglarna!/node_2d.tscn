@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://bt72j3rqspp28" path="res://Kod/character move,emt.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://ygjqsxq17tof" path="res://Sprites/charecter.png" id="2_epypp"]
-[ext_resource type="Texture2D" uid="uid://b4rqya2wilvi4" path="res://Sprites/jord1.png" id="3_epypp"]
 [ext_resource type="Texture2D" uid="uid://btnhrgl8khucf" path="res://Sprites/charecter walk_1.png" id="3_kdubu"]
 [ext_resource type="Texture2D" uid="uid://cmdcyx86jiv6t" path="res://Sprites/charecter walk_2.png" id="4_d21ai"]
 [ext_resource type="Texture2D" uid="uid://da7iwvcoej7vt" path="res://Sprites/charecter blink.png" id="5_rj586"]
+[ext_resource type="Texture2D" uid="uid://drwmlx57rmmn2" path="res://Sprites/grass_block.png" id="6_kdubu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(131, 130.5)
@@ -109,6 +109,7 @@ position = Vector2(64.5, 65)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
 position = Vector2(65.6602, 66.6914)
 scale = Vector2(5.002, 5)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
@@ -123,9 +124,10 @@ position = Vector2(67, 386)
 shape = SubResource("RectangleShape2D_q6r6c")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(68, 387)
-scale = Vector2(1.36, 1.34)
-texture = ExtResource("3_epypp")
+texture_filter = 1
+position = Vector2(66, 384)
+scale = Vector2(5.5, 5.314)
+texture = ExtResource("6_kdubu")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2(-29, 5)

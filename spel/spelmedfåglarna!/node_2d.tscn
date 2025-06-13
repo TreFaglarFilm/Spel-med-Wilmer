@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bw38lsxfautvt"]
 
 [ext_resource type="Script" uid="uid://bt72j3rqspp28" path="res://Kod/character move,emt.gd" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://b2x748n13pw8t" path="res://Sprites/icon.svg" id="2_epypp"]
+[ext_resource type="Texture2D" uid="uid://ygjqsxq17tof" path="res://Sprites/charecter.png" id="2_epypp"]
 [ext_resource type="Texture2D" uid="uid://b4rqya2wilvi4" path="res://Sprites/jord1.png" id="3_epypp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
@@ -22,8 +22,9 @@ script = ExtResource("1_0e48y")
 position = Vector2(64.5, 65)
 shape = SubResource("RectangleShape2D_0hol4")
 
-[node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(62, 66)
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(64.625, 65.625)
+scale = Vector2(5.07, 5.15)
 texture = ExtResource("2_epypp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -38,7 +39,8 @@ scale = Vector2(1.36, 1.34)
 texture = ExtResource("3_epypp")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-29, 5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(-36.75, 251)
+position = Vector2(-7, 252)
 shape = SubResource("RectangleShape2D_epypp")

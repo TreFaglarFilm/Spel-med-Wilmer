@@ -23,8 +23,8 @@ position = Vector2(64.5, 65)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(64.625, 65.625)
-scale = Vector2(5.07, 5.15)
+position = Vector2(65.1602, 66)
+scale = Vector2(5.18719, 5.16938)
 texture = ExtResource("2_epypp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

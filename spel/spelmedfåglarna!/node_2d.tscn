@@ -159,12 +159,11 @@ scale = Vector2(5.002, 5)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
 animation = &"idle"
 
-[node name="jump sound" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
 stream = SubResource("AudioStreamRandomizer_ir8iy")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(65.5, 69.6251)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]

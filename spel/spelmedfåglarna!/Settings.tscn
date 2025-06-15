@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://begadujwbqnya"]
+
+[ext_resource type="Script" uid="uid://be2buvawkkva2" path="res://Kod/settings.gd" id="1_bvb5x"]
+
+[node name="VolumeMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = 33.0
+offset_right = 42.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bvb5x")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 117.0
+offset_bottom = 141.0
+
+[node name="Text" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 31.0
+offset_top = 27.0
+offset_right = 90.0
+offset_bottom = 50.0
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Panel"]
+layout_mode = 2
+offset_left = 31.0
+offset_top = 54.0
+offset_right = 90.0
+offset_bottom = 70.0
+
+[node name="text" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 31.0
+offset_top = 74.0
+offset_right = 90.0
+offset_bottom = 97.0
+text = "Mute"
+
+[node name="Mute" type="CheckBox" parent="Panel"]
+layout_mode = 2
+offset_left = 31.0
+offset_top = 101.0
+offset_right = 90.0
+offset_bottom = 125.0
+
+[node name="CloseButton" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="value_changed" from="Panel/VolumeSlider" to="." method="_on_volum_value_changed"]
+[connection signal="toggled" from="Panel/Mute" to="." method="_on_mute_toggled"]
+[connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]

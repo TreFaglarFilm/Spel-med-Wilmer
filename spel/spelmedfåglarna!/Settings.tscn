@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://be2buvawkkva2" path="res://Kod/settings.gd" id="1_bvb5x"]
 
-[node name="VolumeMenu" type="Control"]
+[node name="SettingsMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -15,46 +15,54 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bvb5x")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 117.0
-offset_bottom = 141.0
+offset_right = 120.0
+offset_bottom = 108.0
+color = Color(0.1352, 0.52, 0.15444, 0.607843)
 
-[node name="Text" type="Label" parent="Panel"]
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="VolumeContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 14.0
+offset_right = 60.0
+offset_bottom = 57.0
+
+[node name="VolumeLabel" type="Label" parent="VolumeContainer"]
 layout_mode = 2
-offset_left = 31.0
-offset_top = 27.0
-offset_right = 90.0
-offset_bottom = 50.0
 text = "Volume"
 
-[node name="VolumeSlider" type="HSlider" parent="Panel"]
+[node name="VolumeSlider" type="HSlider" parent="VolumeContainer"]
 layout_mode = 2
-offset_left = 31.0
-offset_top = 54.0
-offset_right = 90.0
-offset_bottom = 70.0
+max_value = 2.0
+step = 0.01
 
-[node name="text" type="Label" parent="Panel"]
+[node name="MuteContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 58.0
+offset_right = 70.0
+offset_bottom = 98.0
+
+[node name="MuteLabel" type="Label" parent="MuteContainer"]
 layout_mode = 2
-offset_left = 31.0
-offset_top = 74.0
-offset_right = 90.0
-offset_bottom = 97.0
 text = "Mute"
 
-[node name="Mute" type="CheckBox" parent="Panel"]
+[node name="MuteCheckbox" type="CheckBox" parent="MuteContainer"]
 layout_mode = 2
-offset_left = 31.0
-offset_top = 101.0
-offset_right = 90.0
-offset_bottom = 125.0
 
-[node name="CloseButton" type="Button" parent="Panel"]
+[node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 70.0
+offset_top = 76.0
+offset_right = 120.0
+offset_bottom = 107.0
+text = "Close
+"
 
-[connection signal="value_changed" from="Panel/VolumeSlider" to="." method="_on_volum_value_changed"]
-[connection signal="toggled" from="Panel/Mute" to="." method="_on_mute_toggled"]
-[connection signal="pressed" from="Panel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

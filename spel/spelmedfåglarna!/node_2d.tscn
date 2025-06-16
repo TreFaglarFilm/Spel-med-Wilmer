@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bw38lsxfautvt"]
+[gd_scene load_steps=27 format=4 uid="uid://bw38lsxfautvt"]
 
 [ext_resource type="Script" uid="uid://bt72j3rqspp28" path="res://Kod/character move,emt.gd" id="1_0e48y"]
 [ext_resource type="Script" uid="uid://b4a8ffehgcr5a" path="res://Kod/Main.gd" id="1_flf07"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://dm0mrpfkkpcdt" path="res://Sprites/stone.png" id="14_ta5nu"]
 [ext_resource type="AudioStream" uid="uid://gmiv3b6bj3qv" path="res://ljud/Music/bacround loop.wav" id="15_flf07"]
 [ext_resource type="Texture2D" uid="uid://cqnqwu2d1usbk" path="res://Sprites/pizza.png" id="16_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://8jrsmopapwuq" path="res://Sprites/bakrund/iVho_X.png" id="18_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://haba6xkvkt6f" path="res://Sprites/bakrund/Pv8HBC.png" id="19_fs4d3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
 resource_local_to_scene = true
@@ -201,5 +203,25 @@ texture = ExtResource("16_ta5nu")
 [node name="Pizza3" type="Sprite2D" parent="."]
 position = Vector2(160, -40)
 texture = ExtResource("16_ta5nu")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(120, 68)
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(640, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(160, 108)
+texture = ExtResource("18_rjqkl")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(120, 68)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(640, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(208, 132)
+texture = ExtResource("19_fs4d3")
 
 [connection signal="pressed" from="CharacterBody2D/Button" to="." method="_on_button_pressed"]

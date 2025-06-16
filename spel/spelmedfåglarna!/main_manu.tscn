@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvc5ckxp07jds"]
+
+[ext_resource type="Texture2D" uid="uid://docybmvq3cuuo" path="res://Sprites/fork menu.png" id="1_daxml"]
+[ext_resource type="Script" uid="uid://dsx0gq3ronwup" path="res://main_manu.gd" id="1_uwwrv"]
+
+[node name="Main manu" type="Control"]
+layout_mode = 3
+anchor_left = -0.007
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.064
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uwwrv")
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 152.0
+offset_top = 40.0
+offset_right = 1052.0
+offset_bottom = 271.0
+icon = ExtResource("1_daxml")
+flat = true
+
+[connection signal="hidden" from="Button" to="." method="_on_button_hidden"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

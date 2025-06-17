@@ -161,7 +161,7 @@ texture_filter = 1
 position = Vector2(65.6602, 66.6914)
 scale = Vector2(5.002, 5)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
-animation = &"idle"
+animation = &"Walking_right"
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
 stream = SubResource("AudioStreamRandomizer_ir8iy")
@@ -185,7 +185,6 @@ autoplay = true
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(160, 15)
-scale = Vector2(1, 1)
 zoom = Vector2(2.2, 2.2)
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -200,14 +199,17 @@ tile_map_data = PackedByteArray("AAABAAkAAAAAAAAAAAACAAkAAAAAAAAAAAADAAkAAAAAAAA
 tile_set = SubResource("TileSet_7vxoj")
 
 [node name="Pizza" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(-2632, 840)
 texture = ExtResource("16_ta5nu")
 
 [node name="Pizza2" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(1136, 336)
 texture = ExtResource("16_ta5nu")
 
 [node name="Pizza3" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(160, -40)
 texture = ExtResource("16_ta5nu")
 
